@@ -12,9 +12,11 @@
 		5A893045208110E100C46AC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A893043208110E100C46AC4 /* Main.storyboard */; };
 		5A893047208110E200C46AC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A893046208110E200C46AC4 /* Assets.xcassets */; };
 		5A89304A208110E200C46AC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A893048208110E200C46AC4 /* LaunchScreen.storyboard */; };
+		98397851288F7B2A8B71D98F /* Pods_MNIST_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5CA1768E190F489C3B8CF7 /* Pods_MNIST_Client.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A80B86760EFC607DAD93DAA /* Pods-MNIST-Client.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIST-Client.release.xcconfig"; path = "Pods/Target Support Files/Pods-MNIST-Client/Pods-MNIST-Client.release.xcconfig"; sourceTree = "<group>"; };
 		5A89303C208110E100C46AC4 /* MNIST-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MNIST-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A89303F208110E100C46AC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A893041208110E100C46AC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		5A893046208110E200C46AC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A893049208110E200C46AC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A89304B208110E200C46AC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A5CA1768E190F489C3B8CF7 /* Pods_MNIST_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MNIST_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDCEDE8F4746362E3EBFF18D /* Pods-MNIST-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MNIST-Client.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MNIST-Client/Pods-MNIST-Client.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98397851288F7B2A8B71D98F /* Pods_MNIST_Client.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				5A89303E208110E100C46AC4 /* MNIST-Client */,
 				5A89303D208110E100C46AC4 /* Products */,
+				675503FB6EE0E65B9A0F3E38 /* Pods */,
+				7D21897F71B8C7BA673BEE3A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = "MNIST-Client";
 			sourceTree = "<group>";
 		};
+		675503FB6EE0E65B9A0F3E38 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BDCEDE8F4746362E3EBFF18D /* Pods-MNIST-Client.debug.xcconfig */,
+				5A80B86760EFC607DAD93DAA /* Pods-MNIST-Client.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7D21897F71B8C7BA673BEE3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5CA1768E190F489C3B8CF7 /* Pods_MNIST_Client.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A89304E208110E200C46AC4 /* Build configuration list for PBXNativeTarget "MNIST-Client" */;
 			buildPhases = (
+				34549093F177C17FC5869244 /* [CP] Check Pods Manifest.lock */,
 				5A893038208110E100C46AC4 /* Sources */,
 				5A893039208110E100C46AC4 /* Frameworks */,
 				5A89303A208110E100C46AC4 /* Resources */,
+				6D5E68FFB6B1D500F03793F6 /* [CP] Embed Pods Frameworks */,
+				B2F5E4B511A22FD8F25BB0F6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		34549093F177C17FC5869244 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MNIST-Client-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D5E68FFB6B1D500F03793F6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MNIST-Client/Pods-MNIST-Client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MNIST-Client/Pods-MNIST-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B2F5E4B511A22FD8F25BB0F6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MNIST-Client/Pods-MNIST-Client-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A893038208110E100C46AC4 /* Sources */ = {
@@ -278,14 +359,12 @@
 		};
 		5A89304F208110E200C46AC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCEDE8F4746362E3EBFF18D /* Pods-MNIST-Client.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MNIST-Client/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apps.yoon.MNIST-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +374,12 @@
 		};
 		5A893050208110E200C46AC4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A80B86760EFC607DAD93DAA /* Pods-MNIST-Client.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "MNIST-Client/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "apps.yoon.MNIST-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
