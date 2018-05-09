@@ -80,6 +80,7 @@ class ViewController: UIViewController {
     
     @IBAction func didTapClear(_ sender: Any) {
         self.tempImageView.image = nil
+        self.predictionLabel.text = nil
     }
 }
 
